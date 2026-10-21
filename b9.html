@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crab Bakery - Bánh ngon hơn nyc bạn</title>
+    <link rel="stylesheet" href="b9.css">
+    <!-- Font Awesome dùng cho icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Menu -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fa-solid fa-cake-candles"></i>
+                <div class="logo-text">
+                    <h1>Crab Bakery</h1>
+                    <span>Bánh ngon hơn nyc bạn</span>
+                </div>
+            </div>
+            
+            <!-- Nút Hamburger cho Mobile/Tablet -->
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="active">Trang chủ</a></li>
+                    <li><a href="#">Sản phẩm</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="container banner-container">
+            <div class="banner-content">
+                <h2>Sạp bánh nhỏ</h2>
+                <h3>Fresh flavor every bite</h3>
+                <p>Bánh ngọt healthy - Nguyên liệu ít calories - Hương vị tuyệt vời</p>
+                <a href="#" class="btn-primary">Xem sản phẩm</a>
+            </div>
+            <div class="banner-img">
+                <img src="biaanh.jpg" alt="Bánh kem dâu">
+            </div>
+        </div>
+    </section>
+
+    <!-- Danh sách sản phẩm nổi bật -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Sản phẩm nổi bật</h2>
+            <div class="product-grid">
+                <!-- Sản phẩm 1 -->
+                <div class="product-card">
+                    <img src="banhkemdau.jpg" alt="Bánh kem dâu">
+                    <h4>Bánh kem dâu</h4>
+                    <p class="price">250.000đ</p>
+                    <a href="#" class="btn-buy">Mua ngay</a>
+                </div>
+                <!-- Sản phẩm 2 -->
+                <div class="product-card">
+                    <img src="socola.jpg" alt="Bánh socola">
+                    <h4>Bánh socola</h4>
+                    <p class="price">230.000đ</p>
+                    <a href="#" class="btn-buy">Mua ngay</a>
+                </div>
+                <!-- Sản phẩm 3 -->
+                <div class="product-card">
+                    <img src="matcha.jpg" alt="Bánh matcha">
+                    <h4>Bánh matcha</h4>
+                    <p class="price">220.000đ</p>
+                    <a href="#" class="btn-buy">Mua ngay</a>
+                </div>
+                <!-- Sản phẩm 4 -->
+                <div class="product-card">
+                    <img src="cupcake.jpg" alt="Bánh cupcake">
+                    <h4>Bánh cupcake</h4>
+                    <p class="price">35.000đ</p>
+                    <a href="#" class="btn-buy">Mua ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Phần ưu điểm -->
+    <section class="features">
+        <div class="container features-grid">
+            <div class="feature-item">
+                <i class="fa-solid fa-truck-fast"></i>
+                <div>
+                    <h4>Giao hàng toàn quốc</h4>
+                    <p>Nhanh chóng, an toàn</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                    <h4>Cam kết chất lượng</h4>
+                    <p>Nguyên liệu tươi ngon</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-gift"></i>
+                <div>
+                    <h4>Nhiều ưu đãi hấp dẫn</h4>
+                    <p>Giá tốt mỗi ngày</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-headset"></i>
+                <div>
+                    <h4>Hỗ trợ 24/7</h4>
+                    <p>Luôn sẵn sàng</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Sweet Cake. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script nhỏ để bật/tắt menu trên mobile nếu dùng dạng ẩn -->
+    <script>
+        const toggleBtn = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        toggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
